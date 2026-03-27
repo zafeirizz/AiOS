@@ -2,7 +2,7 @@
 
 **AiOS** is a from-scratch 32-bit operating system built for learning and experimentation. It includes a custom kernel, graphical user interface (GUI), networking stack, multiple filesystems, and basic applications.
 
-[![Virtual_Box_awkdfiasf_27_03_2026_17_37_29.png](https://i.postimg.cc/x8sLKTLQ/Virtual_Box_awkdfiasf_27_03_2026_17_37_29.png)](https://postimg.cc/xNzkQQsp)
+[![Virtual-Box-awkdfiasf-27-03-2026-17-51-05.png](https://i.postimg.cc/HsYgnWSJ/Virtual-Box-awkdfiasf-27-03-2026-17-51-05.png)](https://postimg.cc/grT5Bpbd)
 
 ---
 
