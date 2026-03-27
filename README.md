@@ -2,7 +2,7 @@
 
 **myOS** is a from-scratch 32-bit operating system built for learning and experimentation. It includes a custom kernel, graphical user interface (GUI), networking stack, multiple filesystems, and basic applications.
 
-![GUI Screenshot](https://via.placeholder.com/800x400?text=GUI+Screenshot+Coming)
+[![Virtual_Box_awkdfiasf_27_03_2026_17_37_29.png](https://i.postimg.cc/x8sLKTLQ/Virtual_Box_awkdfiasf_27_03_2026_17_37_29.png)](https://postimg.cc/xNzkQQsp)
 
 ---
 
@@ -129,23 +129,73 @@ set gfxpayload=1024x768x32
 
 ## 💻 Shell Commands
 
-help — List commands  
-clear — Clear screen  
-ticks — Show timer ticks  
-uptime — System uptime  
-mem — Heap usage  
-diskinfo — ATA disk status  
-mkfs <lba> <n> — Create MyFS  
-mount <lba> — Mount filesystem  
-ls — List files  
-cat <file> — Read file  
-write <f> <txt> — Write file  
-rm <file> — Delete file  
-netinfo — Network info  
-arp — ARP cache  
-ping <ip> — Ping host  
-dns <host> — Resolve domain  
-http get <url> — Fetch webpage  
+The myOS shell provides a rich set of commands for filesystem, networking, and system interaction.
+
+### 📁 Filesystem Commands
+| Command | Description |
+|--------|------------|
+| ls | List files (all mounted filesystems) |
+| ls myfs / fat32 / zfsx | List specific filesystem |
+| cat <file> | Display file contents |
+| write <file> <text> | Write text to file (MyFS) |
+| touch <file> | Create empty file |
+| rm <file> | Delete file |
+| cp <src> <dst> | Copy file |
+| mv <src> <dst> | Move/rename file |
+| mkdir <name> | Create directory |
+| stat <file> | File info |
+| pwd | Print working directory |
+| cd <dir> | Change directory |
+| df | Disk usage |
+
+---
+
+### 💾 Disk / Filesystem Management
+| Command | Description |
+|--------|------------|
+| diskinfo | Show disk + FS status |
+| mkfs <lba> <n> | Format MyFS |
+| mount <lba> | Mount MyFS |
+| zmkfs [lba] | Format ZFSX |
+| zmount <lba> | Mount ZFSX |
+| zls | List ZFSX |
+| ztouch <file> | Create file in ZFSX |
+
+---
+
+### 🌐 Networking
+| Command | Description |
+|--------|------------|
+| netinfo | Show IP, MAC, gateway |
+| arp | Show ARP table |
+| ping <ip> | Send ICMP ping |
+| dns <host> | Resolve hostname |
+| netstat | Show connections |
+
+---
+
+### ⚙️ System Commands
+| Command | Description |
+|--------|------------|
+| mem | Heap usage |
+| uptime | System uptime |
+| ticks | Timer ticks |
+| ps | Process list |
+| uname | System info |
+| clear | Clear screen |
+| echo <text> | Print text |
+
+---
+
+### 🖥️ Applications
+| Command | Description |
+|--------|------------|
+| run notepad | Launch text editor |
+| run fileman | Launch file manager |
+| run browser | Launch browser |
+| run calc | Launch calculator |
+| run settings | Launch settings |
+| run diskmgr | Launch disk manager |
 
 ---
 
@@ -154,12 +204,12 @@ http get <url> — Fetch webpage
 Terminal — Run shell commands  
 File Manager — Browse files  
 Text Editor — Basic editing  
-
-Launch GUI:
-startgui
+Calculator - Basic calculator
+Notepad - Currently save not working
+Browser - WIP
 
 ---
-
+```
 ## 🌐 Network Configuration
 
 Default IP: 10.0.2.15
@@ -174,6 +224,7 @@ Test:
 ping 8.8.8.8  
 dns google.com  
 http get example.com  
+```
 
 ---
 
@@ -209,4 +260,4 @@ JamesM, Bran, and others
 
 ## 🧠 Final Note
 
-myOS is a work in progress — enjoy exploring!
+AiOS is a work in progress — enjoy exploring!
