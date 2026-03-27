@@ -3,7 +3,7 @@
 #include "../../include/string.h"
 
 /* ── Button ────────────────────────────────────────────── *
- *  QifshaOS style: dark fill, teal corner-bracket border,  *
+ *  AiOS style: dark fill, teal corner-bracket border,  *
  *  amber highlight on hover, no rounded corners.           *
  * ─────────────────────────────────────────────────────── */
 ui_button_t ui_button_create(int x,int y,int w,int h,const char* label){

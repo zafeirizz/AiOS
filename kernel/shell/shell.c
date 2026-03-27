@@ -55,8 +55,8 @@ static void swriteline(const char* s)       { swrite(s); sputchar('\n'); }
 
 void shell_init_gui(shell_putchar_fn fn) {
     out_fn = fn;
-    swrite("QifshaOS shell -- type 'help'\n");
-    swrite("myos> ");
+    swrite("AiOS shell -- type 'help'\n");
+    swrite("AiOS> ");
 }
 
 static void swrite_dec(uint32_t v) {
@@ -144,7 +144,7 @@ static int delete_any(const char* name) {
 /* ── Commands ─────────────────────────────────────────── */
 
 static void cmd_help(void) {
-    swriteline("QifshaOS Shell Commands");
+    swriteline("AiOS Shell Commands");
     swriteline("─────────────────────────────────────────");
     swriteline("Files (works across MyFS / FAT32 / ZFSX):");
     swriteline("  ls             list files (all mounted FSes)");
@@ -374,7 +374,7 @@ static void cmd_ps(void) {
 }
 
 static void cmd_uname(void) {
-    swriteline("QifshaOS 1.0 x86 i686 ffreestanding");
+    swriteline("AiOS 1.0 x86 i686 ffreestanding");
 }
 
 static void cmd_diskinfo(void) {
@@ -573,7 +573,7 @@ static void execute(char* line) {
 volatile int shell_mode_request = 0;
 
 void shell_init(void) {
-    swriteline("QifshaOS Shell -- type 'help'");
+    swriteline("AiOS Shell -- type 'help'");
     prompt();
 }
 

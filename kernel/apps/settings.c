@@ -204,7 +204,7 @@ static void draw_system(settings_state_t* s, int cx, int cy, int cw) {
     y += 30;
 
     draw_separator(cx, y, cw); y += 8;
-    gfx_text(cx+10, y, "Kernel: QifshaOS x86 (i686)", COLOR_TEXT_L); y += 16;
+    gfx_text(cx+10, y, "Kernel: AiOS x86 (i686)", COLOR_TEXT_L); y += 16;
     gfx_text(cx+10, y, "Build:  ffreestanding -O2 -m32", COLOR_TEXT_L); y += 16;
     gfx_text(cx+10, y, "Heap:   16MB  Framebuffer: 1024x768", COLOR_TEXT_L);
 }
@@ -212,16 +212,16 @@ static void draw_system(settings_state_t* s, int cx, int cy, int cw) {
 /* ── Draw About panel ──────────────────────────────────── */
 static void draw_about(int cx, int cy) {
     int y = cy + 10;
-    gfx_text(cx+10, y, "About QifshaOS", COLOR_ACCENT); y += 20;
+    gfx_text(cx+10, y, "About AIos", COLOR_ACCENT); y += 20;
     gfx_hline(cx+6, y, 360, COLOR_BORDER); y += 10;
-    gfx_text(cx+10, y, "QifshaOS v1.0", COLOR_TEXT_L); y += 16;
+    gfx_text(cx+10, y, "AiOS v1.0", COLOR_TEXT_L); y += 16;
     gfx_text(cx+10, y, "Architecture:  x86 (i686)", COLOR_TEXT_L); y += 16;
     gfx_text(cx+10, y, "Filesystems:   MyFS, FAT32, ZFSX", COLOR_TEXT_L); y += 16;
     gfx_text(cx+10, y, "Network:       RTL8139, e1000", COLOR_TEXT_L); y += 16;
     gfx_text(cx+10, y, "Stack:         ARP/IP/ICMP/UDP/TCP/DNS", COLOR_TEXT_L); y += 16;
     gfx_text(cx+10, y, "GUI:           Framebuffer WM (1024x768)", COLOR_TEXT_L); y += 16;
     gfx_text(cx+10, y, "Shell:         Built-in with VFS commands", COLOR_TEXT_L); y += 20;
-    gfx_text(cx+10, y, "Inspired by vib-OS (viralcode/vib-OS)", COLOR_GRAY);
+    gfx_text(cx+10, y, "Made with love to the Holy Mary by zafeirizz", COLOR_GRAY);
 }
 
 /* ── Main draw ─────────────────────────────────────────── */

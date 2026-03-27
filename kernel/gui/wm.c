@@ -28,7 +28,7 @@ static int      zorder[WM_MAX_WINDOWS];
 static int      cur_px = 512, cur_py = 384;
 
 /* ── Layout constants ─────────────────────────────────── *
- *  QifshaOS uses a LEFT SIDEBAR launcher, no top bar.     *
+ *  AiOS uses a LEFT SIDEBAR launcher, no top bar.     *
  *  Title bar is a LEFT VERTICAL STRIP (not horizontal).   *
  *  Window chrome is bracket-style, not box-style.         *
  * ─────────────────────────────────────────────────────── */
@@ -107,9 +107,9 @@ static void draw_sidebar(void) {
     }
 
     /* OS monogram at top */
-    gfx_text(8,  8,  "Q",  COLOR_ACCENT);
+    gfx_text(8,  8,  "A",  COLOR_ACCENT);
     gfx_text(16, 8,  "i",  COLOR_ACCENT2);
-    gfx_text(24, 8,  "fs", COLOR_TEXT_L);
+    gfx_text(24, 8,  "OS", COLOR_TEXT_L);
     gfx_hline(4, 28, SIDEBAR_W-8, COLOR_BORDER_DIM);
 
     for (int i = 0; i < NUM_APPS; i++) {

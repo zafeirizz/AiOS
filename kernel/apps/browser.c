@@ -29,10 +29,10 @@ static void browser_fetch_url(browser_state_t* state) {
         strcpy(state->page_buffer, "");
         state->content.pos = 0;
         return;
-    } else if (strcmp(url, "http://myos.local") == 0) {
+    } else if (strcmp(url, "http://aios.local") == 0) {
         strcpy(state->page_buffer, 
             "<html>\n"
-            "  <h1>Welcome to myOS Web!</h1>\n"
+            "  <h1>Welcome to AiOS Web!</h1>\n"
             "  <p>This is a simulated web page running on your custom kernel.</p>\n"
             "  <p>Network status: ONLINE</p>\n"
             "</html>"
@@ -155,7 +155,7 @@ void browser_launch(void) {
     if (!state) return;
     
     memset(state, 0, sizeof(browser_state_t));
-    strcpy(state->url_buffer, "http://myos.local");
+    strcpy(state->url_buffer, "http://aios.local");
     state->url_box = ui_textbox_create(5, 5, 300, 20, state->url_buffer, 128);
     state->btn_go = ui_button_create(310, 5, 40, 20, "Go");
     

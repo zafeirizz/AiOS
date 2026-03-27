@@ -80,7 +80,7 @@ void gfx_circle_fill(int cx,int cy,int r,uint32_t c){
             if(x*x+y*y<=r*r) put(cx+x,cy+y,c);
 }
 
-/* ── QifshaOS decorative primitives ──────────────────── */
+/* ── AiOS decorative primitives ──────────────────── */
 
 /* Corner brackets: only draw the L-shaped corners of a rectangle.
  * sz = length of each arm of the bracket. */
