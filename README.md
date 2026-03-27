@@ -237,7 +237,11 @@ http get example.com
 - Network stack incomplete
 
 ---
-
+## Compiling the OS 
+'''
+make clean
+make
+'''
 ## 🤝 Contributing
 
 Open issues or submit pull requests. Follow code style and ensure builds pass.
