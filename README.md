@@ -236,14 +236,7 @@ http get example.com
 - MyFS has no fragmentation support
 - Minimal TCP (SYN/FIN only)
 - GUI performance not optimized
-- Network stack incomplete
-
----
-## Compiling the OS 
-'''
-make clean
-make
-'''
+- Network stack 
 ## 🤝 Contributing
 
 Open issues or submit pull requests. Follow code style and ensure builds pass.
