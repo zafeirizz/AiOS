@@ -92,8 +92,10 @@
 sudo apt install build-essential nasm grub-pc-bin xorriso qemu-system-x86
 
 ### Build
+```
 make clean
 make
+```
 
 Output:
 myos.iso
