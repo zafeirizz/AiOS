@@ -59,7 +59,7 @@
 ---
 
 ## 📁 Project Structure
-
+```
 .
 ├── boot/           # GRUB configuration
 ├── include/        # Public headers
@@ -76,7 +76,7 @@
 ├── linker.ld       # Linker script
 ├── Makefile        # Build system
 └── README.md
-
+```
 ---
 
 ## ⚙️ Build Instructions
